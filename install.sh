@@ -16,7 +16,7 @@ mkdir working;
 cd working;
 sudo apt update;
 sudo apt-get upgrade;
-sudo apt install wget curl calc python3 python-is-python3 git neovim htop;
+sudo apt install wget curl calc python3 python-is-python3 git neovim htop vlc;
 sudo snap install --classic code;
 sudo snap install spotify;
 sudo snap install telegram-desktop;
@@ -74,4 +74,9 @@ sudo apt update && sudo apt upgrade
 sudo apt install clang
 clang --version
 sudo apt install llvm
+git config --global user.name "varun-r-mallya"
+git config --global user.email "varunrmallya@gmail.com"
 
+sudo apt-get install libxss1 libappindicator1 libindicator7
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo apt install ./google-chrome*.deb
