@@ -12,7 +12,9 @@
 # 
 mkdir working;
 tar -xzvf myrepo.tar.gz;
-#rm myrepo.tar.gz;
+tar -xxvf Downloads.tar.xz;
+tar -xxvf MentoGram.tar.xz;
+
 cd working;
 sudo apt update;
 sudo apt-get upgrade;
@@ -23,8 +25,7 @@ sudo snap install telegram-desktop;
 sudo snap install discord;
 sudo snap install brave;
 sudo snap install ghidra;
-sudo snap install docker;
-pip install numpy pandas scikit-learn jupyter keras tensorflow torch nltk;
+pip install numpy pandas scikit-learn jupyter keras tensorflow torch nltk virtualenv;
 sudo add-apt-repository ppa:wireshark-dev/stable;
 sudo apt update;
 sudo apt install wireshark;
@@ -80,3 +81,5 @@ git config --global user.email "varunrmallya@gmail.com"
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome*.deb
+code
+
