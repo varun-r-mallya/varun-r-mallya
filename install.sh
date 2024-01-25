@@ -11,7 +11,7 @@
 # CHANGE TIME SETTINGS TO REMOVE TIME ZONE CONFLICTS FOR WINDOWS
 # 
 mkdir working;
-#tar -xzvf myrepo.tar.gz;
+tar -xzvf myrepo.tar.gz;
 #rm myrepo.tar.gz;
 cd working;
 sudo apt update;
