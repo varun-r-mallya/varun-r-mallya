@@ -2,30 +2,27 @@
 
 #run sudo apt once and enter password
 #install burpsuite 
-#nvidiadrivers CUDA hibernate clang LLVM g++ gcc go rust 
 # https://linuxhint.com/enable-hibernate-ubuntu-22-04-lts/	HIBERNATE
 # https://docs.docker.com/engine/install/ubuntu/	DOCKER
 # https://www.rust-lang.org/tools/install	RUST
 # https://go.dev/doc/install	GOLANG
-# https://portswigger.net/burp/releases/professional-community-2023-11-1-5?requestededition=community&requestedplatform=	BURPSUITE
-# CHANGE TIME SETTINGS TO REMOVE TIME ZONE CONFLICTS FOR WINDOWS
-# 
+# https://portswigger.net/burp/releases/professional-community-2023-11-1-5?requestededition=community&requestedplatform=	BURPSUITE 
 mkdir working;
 tar -xzvf myrepo.tar.gz;
 tar -xxvf Downloads.tar.xz;
-tar -xxvf MentoGram.tar.xz;
 
 cd working;
 sudo apt update;
 sudo apt-get upgrade;
 sudo apt install wget curl calc python3 python-is-python3 git neovim htop vlc;
+sudo apt-get install python3-pip
 sudo snap install --classic code;
 sudo snap install spotify;
 sudo snap install telegram-desktop;
 sudo snap install discord;
 sudo snap install brave;
 sudo snap install ghidra;
-pip install numpy pandas scikit-learn jupyter keras tensorflow torch nltk virtualenv;
+pip install numpy pandas scikit-learn jupyter keras tensorflow torch virtualenv;
 sudo add-apt-repository ppa:wireshark-dev/stable;
 sudo apt update;
 sudo apt install wireshark;
@@ -38,6 +35,7 @@ sudo apt-get update
 sudo apt-get install -y mongodb-org
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 nvm install lts/iron		#CHANGE PERIODICALLY
+#run this in a different window later
 nvm use lts/iron		#CHANGE PERIODICALLY
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 # Add Docker's official GPG key:
@@ -55,6 +53,7 @@ echo \
 sudo apt-get update
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 sudo docker run hello-world
+
 timedatectl set-local-rtc 1
 
 sudo ubuntu-drivers install
