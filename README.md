@@ -1,8 +1,5 @@
 I’m @varun-r-mallya.
-I’m interested in ...C++, Python, Arduino, Solidworks, Javascript...<br>
-I’m currently learning ...React JS,C++,Javascript,Python...<br>
-I’m looking to collaborate on ... any project you want me collaborate on lol...<br>
-📫 How to reach me ...email me. Remove the underscores from this and then use this  v_a_r_u_n_r_m_a_l_l_y_a_@_g_m_a_i_l_._c_o_m
+📫 Email me @ Remove the underscores from this and use v_a_r_u_n_r_m_a_l_l_y_a_@_g_m_a_i_l_._c_o_m
 
 <!---
 varun-r-mallya/varun-r-mallya is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
