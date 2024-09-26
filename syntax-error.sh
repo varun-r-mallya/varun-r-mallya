@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# for Direct install
+# wget -O - https://raw.githubusercontent.com/varun-r-mallya/varun-r-mallya/refs/heads/main/syntax-error.sh | bash
+
 # General tools and updating
 sudo apt update
 sudo apt install ubuntu-restricted-extras -y
