@@ -19,13 +19,16 @@ sudo apt-get install python3-pip
 sudo snap install --classic code;
 sudo snap install spotify;
 sudo snap install telegram-desktop;
+sudo snap install clion --classic;
+sudo snap install zulip;
+sudo snap install slack;
 sudo snap install discord;
-sudo snap install brave;
-sudo snap install ghidra;
-pip install numpy pandas scikit-learn jupyter keras tensorflow torch virtualenv;
-sudo add-apt-repository ppa:wireshark-dev/stable;
+# sudo snap install brave;
+# sudo snap install ghidra;
+# pip install numpy pandas scikit-learn jupyter keras tensorflow torch virtualenv;
+# sudo add-apt-repository ppa:wireshark-dev/stable;
 sudo apt update;
-sudo apt install wireshark;
+# sudo apt install wireshark;
 sudo apt-get install gnupg curl;
 curl -fsSL https://pgp.mongodb.com/server-7.0.asc | \
    sudo gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg \
@@ -34,9 +37,9 @@ echo "deb [ arch=amd64,arm64 signed-by=/usr/share/keyrings/mongodb-server-7.0.gp
 sudo apt-get update
 sudo apt-get install -y mongodb-org
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
-nvm install lts/iron		#CHANGE PERIODICALLY
+nvm install lts/jod		#CHANGE PERIODICALLY
 #run this in a different window later
-nvm use lts/iron		#CHANGE PERIODICALLY
+nvm use lts/jod		#CHANGE PERIODICALLY
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
 # Add Docker's official GPG key:
 sudo apt-get update
@@ -59,15 +62,15 @@ timedatectl set-local-rtc 1
 sudo ubuntu-drivers install
 
 
-wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
-sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
-wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda-repo-ubuntu2204-12-3-local_12.3.2-545.23.08-1_amd64.deb
-sudo dpkg -i cuda-repo-ubuntu2204-12-3-local_12.3.2-545.23.08-1_amd64.deb
-sudo cp /var/cuda-repo-ubuntu2204-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/
-sudo apt-get update
-sudo apt-get -y install cuda-toolkit-12-3
+# wget https://developer.download.nvidia.com/compute/cuda/repos/ubuntu2204/x86_64/cuda-ubuntu2204.pin
+# sudo mv cuda-ubuntu2204.pin /etc/apt/preferences.d/cuda-repository-pin-600
+# wget https://developer.download.nvidia.com/compute/cuda/12.3.2/local_installers/cuda-repo-ubuntu2204-12-3-local_12.3.2-545.23.08-1_amd64.deb
+# sudo dpkg -i cuda-repo-ubuntu2204-12-3-local_12.3.2-545.23.08-1_amd64.deb
+# sudo cp /var/cuda-repo-ubuntu2204-12-3-local/cuda-*-keyring.gpg /usr/share/keyrings/
+# sudo apt-get update
+# sudo apt-get -y install cuda-toolkit-12-3
 
-sudo apt-get install -y cuda-drivers
+# sudo apt-get install -y cuda-drivers
 
 sudo apt update && sudo apt upgrade
 
@@ -80,5 +83,9 @@ git config --global user.email "varunrmallya@gmail.com"
 sudo apt-get install libxss1 libappindicator1 libindicator7
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo apt install ./google-chrome*.deb
-code
+# code
+
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
 
