@@ -1,4 +1,4 @@
-I like C and quite possibly C++ and Rust. I also write eBPF code.
+I like C and tolerate C++ and Rust. I also write eBPF code.
 <br/>
 Find my work on Sysprof at 
 [GNOME Gitlab profile](https://gitlab.gnome.org/varunrmallya)
