@@ -1,5 +1,5 @@
 I like C and tolerate C++ and Rust. I also write eBPF code.
-I have recently been working with Field Programmable Gate Arrays as well. 
+I have recently been working with Field Programmable Gate Arrays too. 
 <br/>
 Find my work on Sysprof at 
 [GNOME Gitlab profile](https://gitlab.gnome.org/varunrmallya)  
